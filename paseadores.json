@@ -1,0 +1,52 @@
+{
+    "paseadores": [
+        {
+            "nombre": "Carlos Henao",
+            "foto": "image/paseadores/pexels-bertellifotografia-paseador_CarlosHenao.jpg",
+            "descripcion": "Respetuoso y confiable con amplia experiencia en paseos caninos.",
+            "calificacion": 5
+        },
+        {
+            "nombre": "Ana Gómez",
+            "foto": "image/paseadores/pexelPhoto-Anurag Jamwal_Paseador-AnaGomez.jpg",
+            "descripcion": "Apasionada por los animales y responsable con los horarios.",
+            "calificacion": 4.5
+        },
+        {
+            "nombre": "Pedro Ramírez",
+            "foto": "image/paseadores/pexels-zen-chung-paseador_PedroVilla.jpg",
+            "descripcion": "Excelente comunicación con los dueños y cariñoso con las mascotas.",
+            "calificacion": 4
+        },
+        {
+            "nombre": "Esther Fernández",
+            "foto": "image/paseadores//pexelPhoto-ImpactDogCrates-Paseador_Laura Fernández.jpg",
+            "descripcion": "Experta en comportamiento animal y muy puntual.",
+            "calificacion": 5
+        },
+        {
+            "nombre": "Sofía Martínez",
+            "foto": "image/paseadores/pexelsPhoto_bluebird-Paseadores_Sofía Martínez7210453.jpg",
+            "descripcion": "Confiable y con una gran conexión con los perros y gatos.",
+            "calificacion": 3.5
+        },
+        {
+            "nombre": "Miguel Torres",
+            "foto": "image/paseadores/pexels-picazone-agency-859114698-19598247.jpg",
+            "descripcion": "Entrenador canino certificado con 6 años de experiencia.",
+            "calificacion": 5
+        },
+        {
+            "nombre": "Carmen Sánchez",
+            "foto": "image/paseadores/pexels-rdne-carmenSanchez.jpg",
+            "descripcion": "Veterinaria especializada en bienestar animal.",
+            "calificacion": 4.5
+        },
+        {
+            "nombre": "Javier López",
+            "foto": "image/paseadores/pexels-jonathanborba-JavierLopez.jpg",
+            "descripcion": "Dueño de una guardería canina y amante de los perros.",
+            "calificacion": 4
+        }
+    ]
+}
