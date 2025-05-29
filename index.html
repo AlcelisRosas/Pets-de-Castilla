@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets de Castilla</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Link Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Pets de Castilla</h1>
+        <nav>
+          <span id="menu-toggle"><i class="fas fa-bars"></i></span>
+          <ul>
+            <li><a href="PrincipalMenu/galeria.html">Galería</a></li>
+            <li><a href="#paseadores">Paseadores</a></li>
+            <li><a href="#" id="login-icon" title="Iniciar sesión"><i class="fas fa-user"></i></a></li>
+            <li><a href="PrincipalMenu/registro.html">Registrarse</a></li>
+          </ul>
+        </nav>
+        
+        
+    </header>
+
+    <!--Banner-->
+    <div class="carousel">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Perro golden retriever en el pasto">
+        <div class="caption">
+          <h2>¡Bienvenido </h2>
+          <p>a Pets de Castilla!</p>
+        </div>
+      </div>
+    
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Gato blanco y negro acostado">
+        <div class="caption">
+          <h2>Tambien amamos a los gatitos</h2>
+          <p>Con nosotros tu mascota se siente en casa</p>
+        </div>
+      </div>
+    
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="https://images.pexels.com/photos/460823/pexels-photo-460823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Perro labrador en el parque">
+        <div class="caption">
+          <h2>Recuerda registrarte</h2>
+          <p>Felicidad y ejercicio para tu peludo</p>
+        </div>
+      </div>
+    </div>
+    
+    
+<!--Bienvenidos-->
+<h2>Bienvenido a Pets de Castilla</h2>
+<p> ✨ 🐶 Amigos de tus peludos 🐱✨  </p>
+    <!--Paseadores-->
+
+    <section id="paseadores">
+        <h2>Conoce a Nuestros Paseadores</h2>
+        <div id="paseadoresContainer"></div>
+    </section>
+
+<!--modal Iniciar sesion-->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <section id="login">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Nombre del propietario" required>
+          <input type="password" id="password" placeholder="Clave de acceso" required>
+          <button type="submit">Ingresar</button>
+        </form>
+        <p id="loginError" style="color: red; display: none;">Usuario o clave incorrectos</p>
+      </section>
+    </div>
+  </div>
+  
+  
+
+
+    <footer>
+        <p>Pets de Castilla</p>
+        <p>Created by Alcelis G. Rosas</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
