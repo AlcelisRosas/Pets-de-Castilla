@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets de Castilla</title>
+    <link rel="stylesheet" href="/stylesPages/registro.css">
+</head>
+<body>
+    <header>
+        <h1>Pets de Castilla</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html" id="inicio-link">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#paseadores">Paseadores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="registro">
+        <h2>Registro de Propietario y Peludo</h2>
+        <form id="registroForm">
+            <h3>Datos del Propietario</h3>
+            <input type="text" id="nombrePropietario" placeholder="Nombre del propietario" required>
+            <input type="text" id="identificacion" placeholder="Número de identificación" required>
+            <input type="tel" id="telefono" placeholder="Teléfono del propietario" required>
+            <input type="text" id="emergencia" placeholder="En caso de emergencia llamar a:" required>
+            <input type="password" id="claveAcceso" placeholder="Crea tu Clave de acceso" required>
+            <label>Torre:
+                <select id="torre" required>
+                    <option value="">Seleccione una torre</option>
+                    <option>1</option><option>2</option><option>3</option>
+                    <option>4</option><option>5</option><option>6</option>
+                    <option>7</option><option>8</option>
+                </select>
+            </label>
+
+            <div class="peludo">
+                <h3>Datos del Peludo</h3>
+                <input type="text" id="nombrePeludo" placeholder="Nombre del peludo" required>
+                <label>Tipo:
+                    <select id="tipoPeludo" required>
+                        <option>Canino</option>
+                        <option>Felino</option>
+                    </select>
+                </label>
+                <input type="text" id="raza" placeholder="Raza" required>
+                <input type="number" id="edad" placeholder="Edad" required>
+                <label>Discapacidad:
+                    <select id="discapacidad" required>
+                        <option value="">Seleccione</option>
+                        <option>Visual</option>
+                        <option>Auditiva</option>
+                        <option>Motriz</option>
+                        <option>Ninguna</option>
+                    </select>
+                </label>
+                <input type="text" id="enfermedad" placeholder="Enfermedad diagnóstica">
+                <input type="text" id="medicamento" placeholder="Medicamento (nombre y hora)">
+                <br>
+
+                <!-- Selector de carácter con puntos de color -->
+                <label id="caracter-label">Carácter:</label>
+                <div class="custom-select">
+                    <div class="selected-option" onclick="toggleOptions()">
+                        <span class="color-circle verde" id="selected-color"></span>
+                        <span id="selected-text">Verde - Amistoso</span>
+                    </div>
+                    <ul class="options">
+                        <li onclick="selectOption('rojo', 'Rojo - Agresivo')">
+                            <span class="color-circle rojo"></span> Rojo - Agresivo
+                        </li>
+                        <li onclick="selectOption('naranja', 'Naranja - No Amistoso')">
+                            <span class="color-circle naranja"></span> Naranja - No Amistoso
+                        </li>
+                        <li onclick="selectOption('amarillo', 'Amarillo - Cauteloso')">
+                            <span class="color-circle amarillo"></span> Amarillo - Cauteloso
+                        </li>
+                        <li onclick="selectOption('verde', 'Verde - Amistoso')" class="selected">
+                            <span class="color-circle verde"></span> Verde - Amistoso
+                        </li>
+                        <li onclick="selectOption('azul', 'Azul - Entrenado')">
+                            <span class="color-circle azul"></span> Azul - Entrenado
+                        </li>
+                        <li onclick="selectOption('blanco', 'Blanco - Discapacidad')">
+                            <span class="color-circle blanco"></span> Blanco - Discapacidad
+                        </li>
+                        <li onclick="selectOption('morado', 'Morado - No Alimentar')">
+                            <span class="color-circle morado"></span> Morado - No Alimentar
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <label>Foto del peludo:
+                    <input type="file" id="fotoPeludo" accept="image/*">
+                </label>
+            </div>
+            <button type="submit">Otro Peludo</button>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Pets de Castilla</p>
+        <p>Created by Alcelis G. Rosas</p>
+    </footer>
+
+    <script src="/scriptPages/registro.js"></script>
+</body>
+</html>
